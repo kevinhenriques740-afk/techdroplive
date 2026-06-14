@@ -1,5 +1,11 @@
 # AIToolsDaily — Project Context
 
+## RESPONSE FORMAT
+- No explanations, no step narration
+- Only show: file changed, lines added/removed, commit hash
+- If something fails, one line saying what failed
+- Nothing else
+
 ## Project Brief
 - **Name:** AIToolsDaily
 - **Niche:** AI Tools & Productivity news, reviews, and guides
