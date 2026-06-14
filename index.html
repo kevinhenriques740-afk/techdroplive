@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AIToolsDaily - Your daily source for AI tool reviews, productivity tips, and the latest in artificial intelligence technology.">
+<meta name="keywords" content="AI tools, artificial intelligence, productivity, ChatGPT, Claude, Gemini, AI reviews, best AI tools 2026">
+<meta property="og:title" content="AIToolsDaily – Best AI Tools & Reviews 2026">
+<meta property="og:description" content="Discover the best AI tools for productivity, writing, coding, and more. Daily reviews and guides.">
+<meta property="og:type" content="website">
+<title>AIToolsDaily – Best AI Tools & Reviews 2026</title>
+
+<!-- Google AdSense - REPLACE ca-pub-XXXXXXXXXXXXXXXX with your Publisher ID -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <span>📅 Saturday, June 14, 2026 &nbsp;·&nbsp; Your daily AI briefing</span>
+    <div class="topbar-links">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+      <a href="#">Newsletter</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <div class="logo" onclick="showPage('home')" style="cursor:pointer">
+      AI<span>Tools</span>Daily
+      <small>Reviews · Guides · Productivity</small>
+    </div>
+    <nav>
+      <a href="#" class="active" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showArticle('reviews')">Reviews</a>
+      <a href="#" onclick="showArticle('guides')">Guides</a>
+      <a href="#" onclick="showArticle('news')">News</a>
+      <a href="#" onclick="showArticle('compare')">Compare</a>
+    </nav>
+    <div class="nav-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" placeholder="Search AI tools...">
+    </div>
+  </div>
+  <!-- Category Nav -->
+  <div class="cat-nav">
+    <div class="container" style="max-width:var(--max-w);">
+      <a href="#" class="hot" onclick="return false">🔥 Trending</a>
+      <a href="#" onclick="showArticle('chatgpt')">ChatGPT</a>
+      <a href="#" onclick="showArticle('claude')">Claude</a>
+      <a href="#" onclick="showArticle('gemini')">Gemini</a>
+      <a href="#" onclick="showArticle('image-ai')">Image AI</a>
+      <a href="#" onclick="showArticle('coding-ai')">Coding AI</a>
+      <a href="#" onclick="showArticle('video-ai')">Video AI</a>
+      <a href="#" onclick="showArticle('productivity')">Productivity</a>
+      <a href="#" onclick="showArticle('business')">Business</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     HOME PAGE
+============================================================ -->
+<div id="home-page">
+
+  <!-- LEADERBOARD AD -->
+  <div class="container">
+    <div class="ad-slot ad-leaderboard">
+      <!-- Google AdSense: Leaderboard 728x90 -->
+      <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins> -->
+      Advertisement · 728×90
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-main">
+          <div class="eyebrow">⚡ Breaking</div>
+          <h1><a href="#" onclick="showArticle('main')">Claude 4 Opus Beats GPT-5 in Every Benchmark — What This Means for Your Workflow</a></h1>
+          <p class="excerpt">Anthropic's flagship model just dropped scores that have the AI world buzzing. We ran 40 real-world productivity tests so you don't have to.</p>
+          <div style="display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;">
+            <span class="tag blue">AI Models</span>
+            <span class="tag red">Breaking</span>
+          </div>
+          <div style="font-size:12px;color:var(--ink-muted)">By <strong style="color:var(--ink)">Marcus Rivera</strong> &nbsp;·&nbsp; June 13, 2026 &nbsp;·&nbsp; 8 min read</div>
+          <div class="hero-img bg-1" style="margin-top:20px;">🤖</div>
+        </div>
+
+        <div class="hero-stack">
+          <div class="hero-stack-item">
+            <div class="num">01</div>
+            <h3><a href="#" onclick="showArticle('perplexity')">Perplexity AI Launches "Deep Research Pro" — Is It Worth $20/mo? <span class="badge-new">New</span></a></h3>
+            <div class="meta">Reviews · 5 min read</div>
+          </div>
+          <div class="hero-stack-item">
+            <div class="num">02</div>
+            <h3><a href="#" onclick="showArticle('sora')">OpenAI Sora 2.0: We Generated 50 Videos and Here's Our Verdict</a></h3>
+            <div class="meta">Video AI · 7 min read</div>
+          </div>
+          <div class="hero-stack-item">
+            <div class="num">03</div>
+            <h3><a href="#" onclick="showArticle('agents')">The Best AI Agents for Business in 2026 — Ranked and Tested <span class="badge-hot">Hot</span></a></h3>
+            <div class="meta">Business · 12 min read</div>
+          </div>
+          <div class="hero-stack-item">
+            <div class="num">04</div>
+            <h3><a href="#" onclick="showArticle('free-tools')">7 Free AI Tools That Replace $500/mo Software Subscriptions</a></h3>
+            <div class="meta">Guides · 6 min read</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="container">
+      <div class="layout-sidebar">
+
+        <!-- LEFT: MAIN FEED -->
+        <div>
+
+          <!-- LATEST REVIEWS -->
+          <section style="margin-bottom:48px;">
+            <div class="section-head">
+              <h2>Latest Reviews</h2>
+              <a href="#" class="see-all">See All →</a>
+            </div>
+            <div class="grid-3">
+              <div class="card">
+                <div class="card-thumb bg-1">✍️</div>
+                <div class="card-body">
+                  <span class="tag blue">Writing</span>
+                  <h3><a href="#" onclick="showArticle('jasper')">Jasper AI 2026 Review: Still Worth It After All the Hype?</a></h3>
+                  <p>We put Jasper through 30 content types. The results surprised us.</p>
+                  <div class="card-meta">
+                    <div class="stars">★★★★☆</div>
+                    <span>4.2/5</span>
+                    <span>·</span>
+                    <span>June 11</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-thumb bg-5">💻</div>
+                <div class="card-body">
+                  <span class="tag green">Coding</span>
+                  <h3><a href="#" onclick="showArticle('cursor')">Cursor vs GitHub Copilot: Which AI Coder Wins in 2026?</a></h3>
+                  <p>A developer's honest breakdown after 3 months using both daily.</p>
+                  <div class="card-meta">
+                    <div class="stars">★★★★★</div>
+                    <span>4.8/5</span>
+                    <span>·</span>
+                    <span>June 10</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-thumb bg-6">🎨</div>
+                <div class="card-body">
+                  <span class="tag">Image AI</span>
+                  <h3><a href="#" onclick="showArticle('midjourney')">Midjourney v7 vs DALL-E 4: The Ultimate Image AI Showdown</a></h3>
+                  <p>200 prompts. Two models. One winner. The data speaks for itself.</p>
+                  <div class="card-meta">
+                    <div class="stars">★★★★☆</div>
+                    <span>4.5/5</span>
+                    <span>·</span>
+                    <span>June 9</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- AD: IN-CONTENT RECTANGLE -->
+          <div class="ad-slot ad-rectangle" style="margin-bottom:40px;">
+            <!-- Google AdSense: Rectangle 300x250 or Responsive -->
+            <!-- <ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins> -->
+            Advertisement · In-Article (336×280 recommended)
+          </div>
+
+          <!-- TOP AI TOOLS TABLE -->
+          <section style="margin-bottom:48px;">
+            <div class="section-head">
+              <h2>Top AI Tools — June 2026</h2>
+              <a href="#" class="see-all">Full Rankings →</a>
+            </div>
+            <div style="background:white;border:1px solid var(--border);border-radius:6px;overflow:hidden;">
+              <table class="tool-table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Tool</th>
+                    <th>Category</th>
+                    <th>Score</th>
+                    <th>Best For</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1</strong></td>
+                    <td><strong>Claude 4 Opus</strong> 🏆</td>
+                    <td><span class="tag blue">Writing & Analysis</span></td>
+                    <td class="score">9.6</td>
+                    <td>Long-form content, research</td>
+                    <td>$20/mo</td>
+                  </tr>
+                  <tr>
+                    <td><strong>2</strong></td>
+                    <td><strong>ChatGPT-5</strong></td>
+                    <td><span class="tag">General</span></td>
+                    <td class="score">9.4</td>
+                    <td>Versatile daily tasks</td>
+                    <td>$20/mo</td>
+                  </tr>
+                  <tr>
+                    <td><strong>3</strong></td>
+                    <td><strong>Gemini Ultra 2</strong></td>
+                    <td><span class="tag green">Multimodal</span></td>
+                    <td class="score">9.1</td>
+                    <td>Google Workspace integration</td>
+                    <td>$19.99/mo</td>
+                  </tr>
+                  <tr>
+                    <td><strong>4</strong></td>
+                    <td><strong>Cursor</strong></td>
+                    <td><span class="tag green">Coding</span></td>
+                    <td class="score">9.0</td>
+                    <td>Developers, code generation</td>
+                    <td>$20/mo</td>
+                  </tr>
+                  <tr>
+                    <td><strong>5</strong></td>
+                    <td><strong>Perplexity Pro</strong></td>
+                    <td><span class="tag blue">Research</span></td>
+                    <td class="score">8.8</td>
+                    <td>Real-time research & search</td>
+                    <td>$20/mo</td>
+                  </tr>
+                  <tr>
+                    <td><strong>6</strong></td>
+                    <td><strong>Midjourney v7</strong></td>
+                    <td><span class="tag">Image AI</span></td>
+                    <td class="score">8.7</td>
+                    <td>Creative & commercial images</td>
+                    <td>$10/mo</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- GUIDES GRID -->
+          <section style="margin-bottom:48px;">
+            <div class="section-head">
+              <h2>How-To Guides</h2>
+              <a href="#" class="see-all">All Guides →</a>
+            </div>
+            <div class="grid-2">
+              <div class="list-article">
+                <div class="list-thumb bg-1">📝</div>
+                <div>
+                  <span class="tag">Guide</span>
+                  <h4><a href="#" onclick="showArticle('prompt')">The 2026 Prompt Engineering Handbook: 50 Proven Templates</a></h4>
+                  <div class="meta">June 12 &nbsp;·&nbsp; 15 min read</div>
+                </div>
+              </div>
+              <div class="list-article">
+                <div class="list-thumb bg-5">💼</div>
+                <div>
+                  <span class="tag">Business</span>
+                  <h4><a href="#" onclick="showArticle('automate')">How to Automate Your Entire Email Workflow with AI in 2026</a></h4>
+                  <div class="meta">June 11 &nbsp;·&nbsp; 10 min read</div>
+                </div>
+              </div>
+              <div class="list-article">
+                <div class="list-thumb bg-2">🎓</div>
+                <div>
+                  <span class="tag green">Free Tools</span>
+                  <h4><a href="#" onclick="showArticle('free')">The 12 Best Free AI Tools of 2026 (No Credit Card Required)</a></h4>
+                  <div class="meta">June 10 &nbsp;·&nbsp; 8 min read</div>
+                </div>
+              </div>
+              <div class="list-article">
+                <div class="list-thumb bg-4">💰</div>
+                <div>
+                  <span class="tag red">Money</span>
+                  <h4><a href="#" onclick="showArticle('earn')">7 Real Ways to Make Money with AI Tools in 2026</a></h4>
+                  <div class="meta">June 9 &nbsp;·&nbsp; 11 min read</div>
+                </div>
+              </div>
+              <div class="list-article">
+                <div class="list-thumb bg-6">🔍</div>
+                <div>
+                  <span class="tag blue">SEO</span>
+                  <h4><a href="#" onclick="showArticle('seo-ai')">AI-Powered SEO: The 2026 Strategy That Actually Works</a></h4>
+                  <div class="meta">June 8 &nbsp;·&nbsp; 9 min read</div>
+                </div>
+              </div>
+              <div class="list-article">
+                <div class="list-thumb bg-3">🤖</div>
+                <div>
+                  <span class="tag">Agents</span>
+                  <h4><a href="#" onclick="showArticle('first-agent')">Build Your First AI Agent in 30 Minutes — No Code Required</a></h4>
+                  <div class="meta">June 7 &nbsp;·&nbsp; 13 min read</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- AD: SECOND IN-CONTENT -->
+          <div class="ad-slot ad-rectangle" style="margin-bottom:40px;">
+            <!-- Google AdSense: In-Article Ad -->
+            <!-- <ins class="adsbygoogle" ...></ins> -->
+            Advertisement · In-Feed (300×250)
+          </div>
+
+          <!-- NEWS GRID -->
+          <section>
+            <div class="section-head">
+              <h2>AI News</h2>
+              <a href="#" class="see-all">All News →</a>
+            </div>
+            <div class="grid-3">
+              <div class="card">
+                <div class="card-thumb bg-3">📰</div>
+                <div class="card-body">
+                  <span class="tag red">News</span>
+                  <h3><a href="#">Google DeepMind Reveals "Gemini 3" Teaser — Launches Q3 2026</a></h3>
+                  <div class="card-meta"><span>June 13</span><span>·</span><span>3 min read</span></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-thumb bg-4">⚖️</div>
+                <div class="card-body">
+                  <span class="tag">Policy</span>
+                  <h3><a href="#">EU AI Act: What Every Business Owner Must Know Right Now</a></h3>
+                  <div class="card-meta"><span>June 12</span><span>·</span><span>6 min read</span></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-thumb bg-2">🚀</div>
+                <div class="card-body">
+                  <span class="tag green">Startup</span>
+                  <h3><a href="#">This $2M AI Startup Just Replaced an Entire Marketing Team</a></h3>
+                  <div class="card-meta"><span>June 11</span><span>·</span><span>5 min read</span></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+          <!-- AD: SIDEBAR -->
+          <div class="ad-slot ad-rectangle">
+            <!-- Google AdSense: Sidebar 300x250 -->
+            <!-- <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins> -->
+            Advertisement · 300×250
+          </div>
+
+          <!-- NEWSLETTER -->
+          <div class="newsletter-widget">
+            <h4>📬 Daily AI Brief</h4>
+            <p>Get the top 5 AI tools and news stories every morning. Free, no spam.</p>
+            <input type="email" placeholder="your@email.com">
+            <button>Subscribe Free →</button>
+          </div>
+
+          <!-- TRENDING -->
+          <div class="sidebar-widget">
+            <h4>🔥 Trending Now</h4>
+            <div class="trending-item">
+              <div class="trending-num">01</div>
+              <div>
+                <h5><a href="#" onclick="showArticle('main')">Claude 4 Opus vs GPT-5 Full Benchmark</a></h5>
+                <div class="meta">14,320 views today</div>
+              </div>
+            </div>
+            <div class="trending-item">
+              <div class="trending-num">02</div>
+              <div>
+                <h5><a href="#">Best AI Tools for Freelancers 2026</a></h5>
+                <div class="meta">9,840 views today</div>
+              </div>
+            </div>
+            <div class="trending-item">
+              <div class="trending-num">03</div>
+              <div>
+                <h5><a href="#">How to Make Money with AI in 2026</a></h5>
+                <div class="meta">8,210 views today</div>
+              </div>
+            </div>
+            <div class="trending-item">
+              <div class="trending-num">04</div>
+              <div>
+                <h5><a href="#">Sora 2.0 Video Generator Review</a></h5>
+                <div class="meta">6,550 views today</div>
+              </div>
+            </div>
+            <div class="trending-item">
+              <div class="trending-num">05</div>
+              <div>
+                <h5><a href="#">Free ChatGPT Alternatives That Are Better</a></h5>
+                <div class="meta">5,120 views today</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AD: SECOND SIDEBAR -->
+          <div class="ad-slot ad-rectangle">
+            <!-- Google AdSense: Sidebar 300x600 half-page -->
+            Advertisement · 300×600
+          </div>
+
+          <!-- CATEGORIES WIDGET -->
+          <div class="sidebar-widget">
+            <h4>Browse Topics</h4>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;">
+              <a href="#" class="tag blue">ChatGPT</a>
+              <a href="#" class="tag">Claude</a>
+              <a href="#" class="tag green">Coding AI</a>
+              <a href="#" class="tag">Image AI</a>
+              <a href="#" class="tag red">Video AI</a>
+              <a href="#" class="tag blue">Productivity</a>
+              <a href="#" class="tag">Business</a>
+              <a href="#" class="tag green">Free Tools</a>
+              <a href="#" class="tag">Research AI</a>
+              <a href="#" class="tag red">Hot Takes</a>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- ============================================================
+     ARTICLE PAGE (shared template, content swaps)
+============================================================ -->
+<div id="article-page" style="display:none;">
+
+  <!-- AD: ARTICLE TOP -->
+  <div class="container">
+    <div class="ad-slot ad-leaderboard">
+      <!-- Google AdSense: Article top leaderboard -->
+      Advertisement · Article Top (728×90)
+    </div>
+  </div>
+
+  <div class="article-header">
+    <div class="container">
+      <div class="article-breadcrumb">
+        <a href="#" onclick="showPage('home')">Home</a> &rsaquo;
+        <a href="#" id="article-cat-link">AI Models</a> &rsaquo;
+        <span id="article-cat">Claude 4 Opus</span>
+      </div>
+      <span class="tag blue" id="article-tag">AI Models</span>
+      <h1 id="article-title">Claude 4 Opus Beats GPT-5 in Every Benchmark — What This Means for Your Workflow</h1>
+      <p class="lede" id="article-lede">Anthropic's flagship model just dropped scores that have the AI world buzzing. We ran 40 real-world productivity tests so you don't have to.</p>
+      <div class="article-meta">
+        <span class="author">Marcus Rivera</span>
+        <span>·</span>
+        <span id="article-date">June 13, 2026</span>
+        <span>·</span>
+        <span id="article-time">8 min read</span>
+      </div>
+    </div>
+  </div>
+
+  <main style="padding: 40px 0;">
+    <div class="container">
+      <div class="layout-sidebar">
+        <div>
+          <div class="hero-img bg-1" style="margin-bottom:32px;border-radius:6px;height:320px;">🤖</div>
+
+          <div class="article-body" id="article-body">
+            <!-- Content injected by JS -->
+          </div>
+        </div>
+
+        <!-- ARTICLE SIDEBAR -->
+        <aside class="sidebar">
+          <div class="ad-slot ad-rectangle">
+            Advertisement · Article Sidebar (300×250)
+          </div>
+
+          <div class="sidebar-widget">
+            <h4>📋 In This Article</h4>
+            <div style="font-size:13px;display:flex;flex-direction:column;gap:8px;" id="toc">
+              <a href="#" style="color:var(--accent)">→ Overview & Scores</a>
+              <a href="#" style="color:var(--ink-soft)">→ Writing & Content</a>
+              <a href="#" style="color:var(--ink-soft)">→ Coding Ability</a>
+              <a href="#" style="color:var(--ink-soft)">→ Reasoning & Logic</a>
+              <a href="#" style="color:var(--ink-soft)">→ Our Verdict</a>
+            </div>
+          </div>
+
+          <div class="newsletter-widget">
+            <h4>📬 Never Miss a Review</h4>
+            <p>Top AI tools and reviews, every morning.</p>
+            <input type="email" placeholder="your@email.com">
+            <button>Join 48,000 Readers</button>
+          </div>
+
+          <div class="ad-slot ad-rectangle">
+            Advertisement · Article Mid Sidebar (300×600)
+          </div>
+
+          <div class="sidebar-widget">
+            <h4>Related Articles</h4>
+            <div class="list-article" style="padding:10px 0;">
+              <div class="list-thumb bg-5" style="width:60px;height:48px;font-size:20px;">💻</div>
+              <div><h4 style="font-size:13px;font-weight:600;"><a href="#">Best Coding AI Tools 2026</a></h4></div>
+            </div>
+            <div class="list-article" style="padding:10px 0;border-bottom:none;">
+              <div class="list-thumb bg-2" style="width:60px;height:48px;font-size:20px;">📊</div>
+              <div><h4 style="font-size:13px;font-weight:600;"><a href="#">AI Model Comparison Chart</a></h4></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- ============================================================
+     FOOTER (always visible)
+============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">AI<span style="color:var(--accent)">Tools</span>Daily</div>
+        <p>The internet's most trusted source for AI tool reviews, comparisons, and guides. Independent. No paid placements. We test so you don't have to.</p>
+      </div>
+      <div>
+        <h5>Reviews</h5>
+        <ul>
+          <li><a href="#">ChatGPT Review</a></li>
+          <li><a href="#">Claude Review</a></li>
+          <li><a href="#">Gemini Review</a></li>
+          <li><a href="#">Midjourney Review</a></li>
+          <li><a href="#">Cursor Review</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Guides</h5>
+        <ul>
+          <li><a href="#">Getting Started with AI</a></li>
+          <li><a href="#">Prompt Engineering</a></li>
+          <li><a href="#">AI for Business</a></li>
+          <li><a href="#">Free AI Tools</a></li>
+          <li><a href="#">Make Money with AI</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 AIToolsDaily. All rights reserved.</div>
+      <div><a href="privacy.html" style="color:#495057;">Privacy Policy</a> &nbsp;·&nbsp; <a href="#" style="color:#495057;">Terms of Use</a> &nbsp;·&nbsp; <a href="contact.html" style="color:#495057;">Contact</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
