@@ -140,7 +140,8 @@ const defaultArticle = articles.main;
 function showPage(page) {
   document.getElementById('home-page').style.display = 'none';
   document.getElementById('article-page').style.display = 'none';
-  document.getElementById('static-page').style.display = 'none';
+  const staticPage = document.getElementById('static-page');
+  if (staticPage) staticPage.style.display = 'none';
 
   if (page === 'home') {
     document.getElementById('home-page').style.display = 'block';
