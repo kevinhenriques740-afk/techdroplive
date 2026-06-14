@@ -102,7 +102,91 @@
 
         <div class="article-body">
 
-          <p>Article coming soon.</p>
+          <p>AI agents sound intimidating. They're not. Here's how to build one today without writing a single line of code.</p>
+
+          <p>Six months ago I thought AI agents were something only developers with Python experience could build. Then I spent an afternoon actually trying to build one and realized I'd been completely wrong.</p>
+
+          <p>You don't need to code. You don't need to understand APIs. You need to know what you want the agent to do and which tool to use. That's it.</p>
+
+          <p>Here's how to build your first working AI agent in 30 minutes — and what to do with it after.</p>
+
+          <h2 id="what-is">What an AI Agent Actually Is</h2>
+
+          <p>Let's kill the jargon first.</p>
+
+          <p>An AI agent is just an AI that takes actions instead of just answering questions. Regular AI: you ask, it answers. AI agent: you give it a goal and it figures out the steps to accomplish it — searching the web, reading documents, sending emails, updating spreadsheets — without you directing every move.</p>
+
+          <p>Think of it like the difference between asking someone a question and delegating a task. Both are useful. The second one scales your time.</p>
+
+          <p>The no-code agents we're building today are the delegation kind. You describe what you want done. The agent figures out how to do it.</p>
+
+          <h2 id="what-you-need">What You'll Need</h2>
+
+          <p>Nothing special. Just:</p>
+
+          <ul>
+            <li>A free account on Zapier or Make (both have free tiers)</li>
+            <li>A free account on Claude.ai or ChatGPT</li>
+            <li>30 minutes and a specific task in mind</li>
+          </ul>
+
+          <p>That's genuinely it. No coding environment, no API keys to set up, no technical knowledge required.</p>
+
+          <h2 id="pick-task">Step 1: Pick Your First Agent Task</h2>
+
+          <p>The most common mistake people make is trying to build something too ambitious for their first agent. Start with one specific, repetitive task that you currently do manually.</p>
+
+          <p><strong>Good first agent tasks:</strong></p>
+          <ul>
+            <li>Monitor a specific website for changes and notify you</li>
+            <li>Summarize long emails and send you the key points</li>
+            <li>Collect information from multiple sources and compile it into a doc</li>
+            <li>Post to social media on a schedule</li>
+            <li>Send follow-up emails automatically after a trigger</li>
+          </ul>
+
+          <p><strong>Bad first agent tasks (too complex for a first build):</strong></p>
+          <ul>
+            <li>"Manage my entire business"</li>
+            <li>"Handle all my customer service"</li>
+            <li>Anything requiring multiple complex decisions in sequence</li>
+          </ul>
+
+          <p>Pick something specific. For this tutorial we're going to build an agent that monitors news about a topic you care about and sends you a daily summary email. Simple, useful, and a great introduction to how agents work.</p>
+
+          <h2 id="build-zapier">Step 2: Build It in Zapier (No Code)</h2>
+
+          <p>Zapier is the easiest starting point. Their interface is designed for non-technical users and their AI features have gotten genuinely impressive.</p>
+
+          <p>Create your free account at zapier.com. Once you're in, click "Create Zap" — that's what Zapier calls an automation.</p>
+
+          <p><strong>Set your trigger:</strong></p>
+          <p>The trigger is what starts your agent running. For our news summary agent:</p>
+          <ul>
+            <li>Search for "RSS" in the trigger options</li>
+            <li>Choose "New item in RSS feed"</li>
+            <li>Find an RSS feed for your topic (most news sites have them — Google "[publication name] RSS feed" to find the URL)</li>
+            <li>Connect it</li>
+          </ul>
+          <p>This means every time a new article appears in that RSS feed, your agent wakes up.</p>
+
+          <p><strong>Add an AI step:</strong></p>
+          <p>Click the + button to add an action. Search for "ChatGPT" or "Claude" in Zapier's app directory. Both are available.</p>
+          <ul>
+            <li>Choose "Send message" or "Conversation"</li>
+            <li>Connect your OpenAI or Anthropic account (free accounts work)</li>
+            <li>In the message field, write your prompt: "Summarize this article in 3 bullet points. Focus on what's most important for someone who follows [YOUR TOPIC]. Article title: [map the title field from your trigger]. Article content: [map the content field]."</li>
+          </ul>
+          <p>This step takes each new article and generates a summary automatically.</p>
+
+          <p><strong>Add an email step:</strong></p>
+          <p>Click + again. Search for "Gmail" or "Email by Zapier."</p>
+          <ul>
+            <li>Set it to send to your email address</li>
+            <li>Subject line: "Daily [TOPIC] Update: [map the article title]"</li>
+            <li>Body: include the AI summary from the previous step</li>
+          </ul>
+          <p>Turn it on. That's it. You just built an AI agent.</p>
 
           <!-- AD: IN-ARTICLE -->
           <div class="ad-slot ad-rectangle" style="margin:32px 0;">
@@ -111,7 +195,76 @@
             Advertisement · In-Article (336×280 recommended)
           </div>
 
-          <!-- CONTINUE ARTICLE CONTENT AFTER AD -->
+          <h2 id="test">Step 3: Test It</h2>
+
+          <p>Before you rely on anything, test it manually. In Zapier, click "Test" on your Zap. It'll run through the whole sequence with a real article and show you the output at each step. If the email looks good — you're done.</p>
+
+          <p>If something looks off, it's usually the prompt. Go back to the AI step and adjust what you're asking for. More specific instructions produce better output.</p>
+
+          <p><strong>Common fixes:</strong></p>
+          <ul>
+            <li>Summary too long? Add "Keep it under 100 words" to your prompt</li>
+            <li>Summary missing key info? Add "Always include: who is involved, what happened, why it matters"</li>
+            <li>Wrong tone? Add "Write for a professional audience" or "Keep it casual"</li>
+          </ul>
+
+          <h2 id="what-next">What to Build Next</h2>
+
+          <p>Once you've got one agent working you'll start seeing opportunities everywhere. Here are the most useful no-code agents to build next, roughly in order of impact.</p>
+
+          <p><strong>Lead research agent:</strong> Trigger: New row added to a Google Sheet (when a new lead is entered). AI step: Research the company name and person using web search, generate a one-paragraph brief. Action: Add the brief back to the spreadsheet in a notes column. This alone saves 10-15 minutes per lead.</p>
+
+          <p><strong>Content repurposing agent:</strong> Trigger: New blog post published on your site. AI steps: Generate a Twitter/X thread, a LinkedIn post, and 3 Instagram caption options. Action: Save all versions to a Google Doc for review. One article becomes four pieces of content automatically.</p>
+
+          <p><strong>Customer feedback agent:</strong> Trigger: New response in a Typeform or Google Form survey. AI step: Analyze sentiment, categorize the feedback type, extract the key insight. Action: Send a Slack message to the relevant team. No more manually reading through survey responses.</p>
+
+          <p><strong>Competitor monitoring agent:</strong> Trigger: RSS feed from competitor blog. AI step: Summarize the article and identify strategic signals (new features, pricing changes, market positioning). Action: Send weekly digest email with all competitor updates.</p>
+
+          <h2 id="make">Going Further: Make.com for More Complex Agents</h2>
+
+          <p>Zapier is excellent for simple linear automations. When you want more complex logic — if this happens do A, but if that happens do B — Make (formerly Integromat) gives you more control.</p>
+
+          <p>Make's visual interface shows your automation as a flowchart, which makes complex logic much easier to understand and build. The free tier is generous and the learning curve isn't as steep as it looks. For your second or third agent, especially if you want branching logic or need to handle errors gracefully, Make is worth learning.</p>
+
+          <h2 id="important">The Most Important Thing to Know About AI Agents</h2>
+
+          <p>They're not perfect and they need supervision.</p>
+
+          <p>Your news summary agent will occasionally produce a weird summary. Your lead research agent will sometimes get details wrong. Your content repurposing agent will occasionally write something you'd never post.</p>
+
+          <div class="callout">
+            <strong>That's normal and expected.</strong> The point isn't perfection — it's that even at 80-85% accuracy, an agent saves you massive amounts of time compared to doing everything manually.
+          </div>
+
+          <p>Build the agent. Review its output. Correct the mistakes. Over time you'll tune the prompts and the accuracy improves. But start with the expectation that you're building a system that needs human review, not one that runs fully autonomously from day one.</p>
+
+          <h2 id="stack">Quick Reference: No-Code Agent Tools</h2>
+
+          <div style="overflow-x:auto;margin:24px 0;">
+            <table class="tool-table">
+              <thead>
+                <tr><th>Tool</th><th>Best For</th><th>Free Tier</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Zapier</td><td>Simple linear automations</td><td>100 tasks/mo</td></tr>
+                <tr><td>Make</td><td>Complex logic and branching</td><td>1,000 operations/mo</td></tr>
+                <tr><td>n8n</td><td>Self-hosted, unlimited</td><td>Free (self-hosted)</td></tr>
+                <tr><td>Relevance AI</td><td>Business-specific agents</td><td>Limited free tier</td></tr>
+                <tr><td>Microsoft Copilot Studio</td><td>Microsoft 365 users</td><td>Limited free tier</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 id="action-plan">Your 30-Minute Action Plan</h2>
+
+          <p><strong>Minutes 1-5:</strong> Create a free Zapier account. Think about one repetitive task you do weekly that involves collecting, summarizing, or routing information.</p>
+          <p><strong>Minutes 5-15:</strong> Build the trigger. Connect whatever starts the process — an email arriving, a form submission, a new RSS item, a scheduled time.</p>
+          <p><strong>Minutes 15-25:</strong> Add the AI step. Write a clear, specific prompt. Test it with sample data. Adjust until the output looks right.</p>
+          <p><strong>Minutes 25-30:</strong> Add the action. Where does the output go? Email, Slack, Google Sheets, a document? Connect it and test the full flow.</p>
+
+          <div class="callout">
+            <strong>After 30 minutes:</strong> Turn it on and let it run for a week. See what it produces. Tweak the prompt if needed. That's all it takes to go from "I've heard about AI agents" to "I have one running." The rest is just building more of them.
+          </div>
 
         </div>
       </div>
