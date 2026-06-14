@@ -43,11 +43,14 @@
   });
 
   document.addEventListener('click', function (e) {
-    if (!e.target.closest('a[href="#newsletter"]')) return;
+    const link = e.target.closest('a[href="#newsletter"]');
+    if (!link) return;
+    e.preventDefault();
     const widget = document.getElementById('newsletter');
     if (!widget) return;
+    widget.scrollIntoView({ behavior: 'smooth', block: 'start' });
     widget.classList.remove('highlight-active');
-    void widget.offsetWidth; // force reflow to restart animation
+    void widget.offsetWidth;
     widget.classList.add('highlight-active');
     setTimeout(function () { widget.classList.remove('highlight-active'); }, 2500);
   });

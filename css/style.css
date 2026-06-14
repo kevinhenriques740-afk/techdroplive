@@ -7,6 +7,10 @@ html { scroll-behavior: smooth; }
   100% { border-color: transparent; background: inherit; transform: scale(1); }
 }
 
+.newsletter-widget {
+  scroll-margin-top: 70px;
+}
+
 .newsletter-widget.highlight-active {
   animation: newsletter-highlight 2.5s ease forwards;
   border: 3px solid transparent;
