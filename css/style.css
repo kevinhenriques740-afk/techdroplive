@@ -1,3 +1,18 @@
+html { scroll-behavior: smooth; }
+
+@keyframes newsletter-highlight {
+  0%   { box-shadow: 0 0 0 3px rgba(100, 180, 255, 0); border-color: transparent; }
+  20%  { box-shadow: 0 0 0 3px rgba(100, 180, 255, 0.6); border-color: #64b4ff; }
+  80%  { box-shadow: 0 0 0 3px rgba(100, 180, 255, 0.4); border-color: #64b4ff; }
+  100% { box-shadow: 0 0 0 3px rgba(100, 180, 255, 0); border-color: transparent; }
+}
+
+.newsletter-widget:target {
+  animation: newsletter-highlight 1.5s ease forwards;
+  border: 2px solid transparent;
+  border-radius: 12px;
+}
+
 /* ===== DESIGN TOKENS ===== */
 :root {
   --ink: #0f1117;
