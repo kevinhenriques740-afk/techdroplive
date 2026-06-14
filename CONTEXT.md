@@ -5,6 +5,7 @@
 - Only show: file changed, lines added/removed, commit hash
 - If something fails, one line saying what failed
 - Nothing else
+- After every commit, immediately run git push origin main. Never leave commits unpushed.
 
 ## Project Brief
 - **Name:** AIToolsDaily
