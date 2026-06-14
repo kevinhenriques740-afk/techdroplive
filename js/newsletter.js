@@ -41,4 +41,14 @@
     if (!btn) return;
     handleSubscribe(btn.closest('.newsletter-widget'));
   });
+
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('a[href="#newsletter"]')) return;
+    const widget = document.getElementById('newsletter');
+    if (!widget) return;
+    widget.classList.remove('highlight-active');
+    void widget.offsetWidth; // force reflow to restart animation
+    widget.classList.add('highlight-active');
+    setTimeout(function () { widget.classList.remove('highlight-active'); }, 2500);
+  });
 })();
