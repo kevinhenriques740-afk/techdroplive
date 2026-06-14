@@ -48,7 +48,9 @@
     e.preventDefault();
     const widget = document.getElementById('newsletter');
     if (!widget) return;
-    widget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const headerHeight = document.querySelector('header').offsetHeight;
+    const top = widget.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+    window.scrollTo({ top, behavior: 'smooth' });
     widget.classList.remove('highlight-active');
     void widget.offsetWidth;
     widget.classList.add('highlight-active');
